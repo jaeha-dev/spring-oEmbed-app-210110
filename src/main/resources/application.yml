@@ -1,0 +1,33 @@
+server:
+  port: 8000
+
+spring:
+  profiles:
+    include: token
+
+  devtools:
+    livereload:
+      enabled: true
+
+  gson:
+    pretty-printing: true
+
+domain:
+  types:
+    - name: youtube
+      endpoint: https://www.youtube.com/oembed?url=
+    - name: vimeo
+      # vimeo supports json or xml
+      endpoint: https://vimeo.com/api/oembed.json?url=
+    - name: facebook
+      endpoint: https://graph.facebook.com/v8.0/oembed_post?url=
+    - name: instagram
+      endpoint: https://graph.facebook.com/v9.0/instagram_oembed?url=
+    - name: twitter
+      endpoint: https://publish.twitter.com/oembed?url=
+    - name: naver
+      endpoint: https://audioclip.naver.com/oembed?url=
+    - name: kakao
+      endpoint: https://tv.kakao.com/oembed?url=
+    - name: empty
+      endpoint: empty

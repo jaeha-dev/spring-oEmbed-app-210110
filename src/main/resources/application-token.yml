@@ -1,0 +1,3 @@
+token:
+  types:
+    facebook: input FACEBOOK_ACCESS_TOKEN

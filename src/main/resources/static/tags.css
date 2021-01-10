@@ -1,0 +1,7 @@
+#supported {
+    margin-bottom: 25px;
+}
+
+#supported .tag {
+    cursor: pointer;
+}

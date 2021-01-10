@@ -1,0 +1,31 @@
+{{>header}}
+
+<div id="container">
+  <div id="form-wrapper" class="card">
+    <div class="card-content">
+      <h2 id="title" class="title is-2">oEmbed Test</h2>
+      {{>supported-tags}}
+
+      <div id="search" class="field has-addons">
+        <div id="input" class="control has-icons-left">
+          <label for="url"></label>
+          <input id="url" class="input" type="text" placeholder="URL">
+          <span class="icon is-small is-left">
+            <i class="fas fa-link"></i>
+          </span>
+        </div>
+        <div class="control">
+          <button id="btn-search" class="button" type="button">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="result-wrapper" class="card">
+    <div class="card-content table-container">
+      <div id="result"></div>
+    </div>
+  </div>
+</div>
+
+{{>footer}}
