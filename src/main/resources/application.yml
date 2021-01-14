@@ -29,5 +29,3 @@ domain:
       endpoint: https://audioclip.naver.com/oembed?url=
     - name: kakao
       endpoint: https://tv.kakao.com/oembed?url=
-    - name: empty
-      endpoint: empty

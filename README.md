@@ -44,14 +44,35 @@
 ├── application.yml: 애플리케이션 설정 정보  
 └── application-token.yml: 액세스 토큰 정보  
 ```  
-# 3. 실행 확인  
+
+# 3. 토큰 및 API 등록  
+
+### [토큰 등록]  
+`application-token.yml` 파일에 발급 받은 액세스 토큰을 입력한다.  
+
+`facebook`, `instagram` 데이터 수집에 필요한 액세스 토큰은 아래 문서를 참고하여 발급 받는다.  
+(https://developers.facebook.com/docs/facebook-login/access-tokens/refreshing?locale=ko_KR)  
+
+```
+token:
+  types:
+    facebook: ABC...
+```
+### [API 등록]  
+`application.yml` 파일에 등록할 API의 `name`, `endpoint` 값을 추가 입력한다.  
+
+```
+domain:
+  types:
+    - name: abc...
+      endpoint: https://www.abc...
+```
+
+# 4. 실행 확인  
 
 `URL 입력 필드`에 조회할 URL 값을 입력한다.  
 `URL 입력 필드`위의 `태그`를 클릭하면 샘플 값을 입력할 수 있다.  
 
-`facebook`, `instagram`은 액세스 토큰을 요구하므로  
-`application-token.yml`파일에 발급 받은 액세스 토큰을 입력한다.  
-(https://developers.facebook.com/docs/facebook-login/access-tokens/refreshing?locale=ko_KR)
 
 ### [웹 화면] 기본 화면  
 ```
